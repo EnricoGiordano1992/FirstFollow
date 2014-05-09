@@ -2,15 +2,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-
-    <TextView
+	
+    <ScrollView
+        android:id="@+id/ScrollView01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        >
+		    
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Inserisci il # di produzioni"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txt_numero_produzioni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"  
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btn_vai_left_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_numero_produzioni"
+        android:layout_centerHorizontal="true"
+        android:text="VAI" />
+
+    <TableLayout
+        android:id="@+id/tabellaContenuti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_vai_left_right" >
+				
+		            <TableRow
+		                android:id="@+id/Contenuti"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+						
+		            </TableRow>
+	            
+			
+        	</TableLayout>
+
+    <Button
+        android:id="@+id/btn_calcola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabellaContenuti"
+        android:layout_centerHorizontal="true"
+        android:text="CALCOLA!"
+        android:visibility="invisible"
+        />
+    <TableLayout
+        android:id="@+id/tabellaContenutiLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_calcola" >
+				
+		            <TableRow
+		                android:id="@+id/ContenutiLast"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+						
+		            </TableRow>
+	            
+			
+        	</TableLayout>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabellaContenutiLast"
+        android:layout_centerHorizontal="true"
+        android:text="RIPARTI!!"
+        android:visibility="invisible"
+        />
+    </RelativeLayout>
+	</ScrollView>
 </RelativeLayout>

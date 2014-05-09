@@ -24,10 +24,33 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int Contenuti=0x7f080005;
+        public static final int ContenutiLast=0x7f080008;
+        public static final int ScrollView01=0x7f080000;
+        public static final int action_settings=0x7f080014;
+        public static final int btn_calcola=0x7f080006;
+        public static final int btn_clear=0x7f080009;
+        public static final int btn_vai_left_right=0x7f080003;
+        public static final int div=0x7f080013;
+        public static final int first=0x7f080010;
+        public static final int follow=0x7f080011;
+        public static final int left=0x7f08000f;
+        public static final int lllast=0x7f08000a;
+        public static final int right=0x7f080012;
+        public static final int spacer=0x7f08000c;
+        public static final int tabellaContenuti=0x7f080004;
+        public static final int tabellaContenutiLast=0x7f080007;
+        public static final int textView1=0x7f080001;
+        public static final int txt_numero_produzioni=0x7f080002;
+        public static final int txtfirst=0x7f08000d;
+        public static final int txtfollow=0x7f08000e;
+        public static final int txtleft=0x7f08000b;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int last=0x7f030001;
+        public static final int last_headers=0x7f030002;
+        public static final int left_right=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f070000;
